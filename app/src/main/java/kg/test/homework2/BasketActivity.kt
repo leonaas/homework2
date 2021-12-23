@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 
-class basket : AppCompatActivity() {
+class BasketActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_basket)
@@ -14,14 +14,14 @@ class basket : AppCompatActivity() {
         val ImageButton = findViewById<ImageButton>(R.id.imageButton4)
 
         ImageButton.setOnClickListener {
-            startActivity(Intent(this, menu::class.java))
+            startActivity(Intent(this, MenuActivity::class.java))
             finish()
         }
 
         val Button = findViewById<Button>(R.id.button12)
 
         Button.setOnClickListener {
-            startActivity(Intent(this, pay::class.java))
+            startActivity(Intent(this, PayActivity::class.java))
             finish()
         }
     }

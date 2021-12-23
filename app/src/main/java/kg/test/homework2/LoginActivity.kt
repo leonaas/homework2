@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class login : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -13,7 +13,7 @@ class login : AppCompatActivity() {
         val Button = findViewById<Button>(R.id.button3)
 
         Button.setOnClickListener{
-            startActivity(Intent(this,homee::class.java))
+            startActivity(Intent(this,HomeActivity::class.java))
             finish()
         }
     }

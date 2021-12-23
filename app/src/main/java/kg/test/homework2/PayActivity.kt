@@ -3,9 +3,9 @@ package kg.test.homework2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class open : AppCompatActivity() {
+class PayActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_open)
+        setContentView(R.layout.activity_pay)
     }
 }
